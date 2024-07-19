@@ -1,0 +1,24 @@
+{
+    "title": "Sample Problem 1",
+    "description": "Sample Problem 2",
+    "difficulty": "easy",
+    "testCases": [
+        {
+            "input": "3",
+            "output": "9"
+        },
+        {
+            "input": "4",
+            "output": "16"
+        }
+    ],
+    "editorial": "Some editorial",
+    "codeStubs": [
+        {
+            "language": "JAVA",
+            "startSnippet": "//{ Driver Code Starts\n// Initial Template for Java\n\nimport java.io.*;\nimport java.util.*;\n\nclass GFG {\n    public static void main(String[] args) throws IOException {\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n        int t = Integer.parseInt(br.readLine().trim());\n        while (t-- > 0) {\n            int n = Integer.parseInt(br.readLine().trim());\n            String[] str = br.readLine().trim().split(\" \");\n            int[] arr = new int[n - 1];\n            for (int i = 0; i < n - 1; i++) {\n                arr[i] = Integer.parseInt(str[i]);\n            }\n            Solution sln = new Solution();\n            System.out.println(sln.missingNumber(n, arr));\n        }\n    }\n}\n// } Driver Code Ends",
+            "userSnippet": "// User function Template for Java\nclass Solution {\n\n    // Note that the size of the array is n-1\n    int missingNumber(int n, int arr[]) {\n\n        // Your Code Here\n    }\n}",
+            "endSnippet": ""
+        }
+    ]
+}
